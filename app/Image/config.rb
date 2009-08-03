@@ -1,3 +1,3 @@
 require 'rho'
 
-Rho::RhoConfig::add_source("Image", {"url"=>"http://localhost:3033/apps/imageApp/sources/Linklist", "source_id"=>8996})
+Rho::RhoConfig::add_source("Image", {"url"=>"#{Rho::RhoConfig.syncserver}Linklist", "source_id"=>8996})
