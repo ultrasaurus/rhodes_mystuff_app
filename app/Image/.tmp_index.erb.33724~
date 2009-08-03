@@ -1,0 +1,14 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		Images
+	</h1>
+</div>
+
+<ul id="images" title="Images" selected="true">
+  	<a class="button right_button" href="Image/new" target="_self">New</a>
+	<%@images.each do |x|%>
+	
+	<li><%=link_to "#{x.link}", :action => :show, :id => x.object%></li>
+	
+	<%end%>
+</ul>

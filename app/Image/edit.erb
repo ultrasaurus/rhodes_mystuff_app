@@ -1,0 +1,27 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		Edit <%=@image.link%>
+	</h1>
+</div>
+
+<form title="Edit Image" 
+	  class="panel" 
+	  id="image_edit_form" 
+	  method="POST" 
+	  action="<%=url_for(:action => :update)%>" selected="true">
+	<fieldset>
+		<input type="hidden" name="id" value="<%=@image.object%>"/>
+		
+		  <div class="row">
+			  <label>Link: </label>
+			  <input type="text" name="image[link]" value="<%=@image.link%>"/>
+		  </div>
+		
+	</fieldset>
+	<input type="submit" value="Update"/>
+	<p align="center">
+		<a href="<%=url_for(:action => :delete, :id => @image.object)%>">
+			<font color="#990000">Delete</font>
+		</a>
+	</p>
+</form>

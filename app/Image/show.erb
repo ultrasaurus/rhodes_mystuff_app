@@ -1,0 +1,19 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		<%=@image.link%>
+	</h1>
+</div>
+
+<div class="panel" selected="true">
+
+<a class="button right_button" href="<%=url_for(:action => :edit, :id => @image.object)%>" target="_self">Edit</a>
+
+<table class="grid">
+  
+  <tr>
+	<td class="gridleft">Link</td>
+    <td class="gridright"><%=@image.link%></td>
+  </tr>
+  
+</table>
+</div>

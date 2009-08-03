@@ -1,0 +1,9 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		imageApp
+	</h1>
+</div>
+
+<ul id="home" selected="true" title="imageApp">
+	<li>Add links here...</li>
+</ul>

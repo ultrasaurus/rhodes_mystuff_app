@@ -1,0 +1,22 @@
+<div class="toolbar">
+	<h1 id="pageTitle">
+		New Image
+	</h1>
+</div>
+
+<form title="New Image" 
+	  class="panel"
+	  id="image_new_form" 
+	  method="POST" 
+	  action="<%=url_for(:action => :create)%>" selected="true">
+	<fieldset>
+		<input type="hidden" name="id" value="<%=@image.object%>"/>
+		
+		  <div class="row">
+			  <label>Link: </label>
+			  <input type="text" name="image[link]"/>
+		  </div>
+		
+	</fieldset>
+	<input type="submit" value="Create"/>
+</form>
