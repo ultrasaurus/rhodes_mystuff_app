@@ -20,16 +20,16 @@ class SettingsController < Rho::RhoController
         @logged_in = SyncEngine.login("admin", "password", (url_for :action => :login_callback) )
         render :action => :wait
       else
-        WebView.navigate ( url_for :action => :login_callback, :params => 'error_code=0')
+        WebView.navigate ( url_for :action => :index, :controller => 'Image')
+        #render :action => :wait
       end
   end
 
   def login_callback
     err_code = @params['error_code'].to_i
     if err_code == 0
-      Image.set_notification( (url_for :controller => 'Image'), '')
+      Image.set_notification( (url_for :action => :sync_callback, :controller => 'Image'), '')  # write bug params should be optional
       SyncEngine::dosync 
-      render :controller => 'Image'
     else
       @msg = @params['error_message']
       if @msg == nil or @msg.length == 0 

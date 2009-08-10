@@ -8,8 +8,8 @@
   	<a class="button right_button" href="Image/new" target="_self">New</a>
 	<%@images.each do |img|%>
 	
-	<li><%=link_to "#{img.title}", img.link %>
-		<img src="<%= img.img_url %>" alt="image" width="200" height="200"/>
+	<li><%=link_to "#{img.link}", :action => :show, :id => img.object%>
+		<img src="<%= img.link %>" alt="image" width="200" height="200"/>
 	
 	</li>
 	

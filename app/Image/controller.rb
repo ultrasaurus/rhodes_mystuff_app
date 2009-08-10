@@ -7,6 +7,10 @@ class ImageController < Rho::RhoController
     @images = Image.find(:all)
     render
   end
+  
+  def sync_callback
+     WebView.navigate ( url_for :action => :index)
+  end
 
   # GET /Image/{1}
   def show
