@@ -1,4 +1,4 @@
-This is sample code the illustrates how to crate a list with thumbnails and links to media usng Rhodes.  Originally written by Sarah Allen and Lee Lundrigan. You can find more about Rhodes at http://www.rhomobile.com
+This is sample code that illustrates how to create a list with thumbnails and links to media usng Rhodes.  Originally written by Sarah Allen and Lee Lundrigan. 
 
    Copyright (C) 2009  Blazing Cloud, http://blazingcloud.net
 
@@ -14,4 +14,6 @@ This is sample code the illustrates how to crate a list with thumbnails and link
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+You can find more about Rhodes at http://www.rhomobile.com
 
